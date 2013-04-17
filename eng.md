@@ -21,7 +21,7 @@ detail about how I handle things here:
 you’ve taken a different approach on your new site. I was wondering if you could 
 walk us through this.
 
-*tl;dr* To balance the correct semantics with better performance.
+**tl;dr** To balance the correct semantics with better performance.
 
 So, I previously wrote that you should not use a `h1` for your logo, but you
 should use an `img`. Here’s the markup that I use on CSS Wizardry right now
