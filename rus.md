@@ -46,22 +46,22 @@ Base64**
 изображение, которое увидят пользователи. Вот (S)CSS:
 
 <pre><code class="css">
-.s{
-	background-image:url(/img/css/sprites/main.svg);
-}
-.s--csswizardry-logo{
-	width:64px;
-	height:64px;
-	background-position:-5px -5px;
-	@include vendor(background-size, 250px 250px);
+		.s{
+			background-image:url(/img/css/sprites/main.svg);
+		}
+		.s--csswizardry-logo{
+			width:64px;
+			height:64px;
+			background-position:-5px -5px;
+			@include vendor(background-size, 250px 250px);
 
-	@include media-query(desk){
-		@include vendor(background-size, 500px 500px);
-		width:128px;
-		height:128px;
-		background-position:-10px -10px;
-	}
-}
+			@include media-query(desk){
+				@include vendor(background-size, 500px 500px);
+				width:128px;
+				height:128px;
+				background-position:-10px -10px;
+			}
+		}
 </code></pre>
 
 Я всего-навсего указываю класс, в котором будет применен спрайт (`.s`) и затем
