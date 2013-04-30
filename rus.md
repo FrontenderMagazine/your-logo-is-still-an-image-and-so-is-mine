@@ -45,22 +45,22 @@ Base64**
 подходящий с точки зрения семантики `img` и, немного схитрив, добавил из CSS
 изображение, которое увидят пользователи. Вот (S)CSS:
 
-		.s{
-			background-image:url(/img/css/sprites/main.svg);
-		}
-		.s--csswizardry-logo{
-			width:64px;
-			height:64px;
-			background-position:-5px -5px;
-			@include vendor(background-size, 250px 250px);
+	.s{
+		background-image:url(/img/css/sprites/main.svg);
+	}
+	.s--csswizardry-logo{
+		width:64px;
+		height:64px;
+		background-position:-5px -5px;
+		@include vendor(background-size, 250px 250px);
 
-			@include media-query(desk){
-				@include vendor(background-size, 500px 500px);
-				width:128px;
-				height:128px;
-				background-position:-10px -10px;
-			}
+		@include media-query(desk){
+			@include vendor(background-size, 500px 500px);
+			width:128px;
+			height:128px;
+			background-position:-10px -10px;
 		}
+	}
 
 Я всего-навсего указываю класс, в котором будет применен спрайт (`.s`), и затем
 более детально описываю его свойства в `.s--csswizardry-logo` (не забывая об
